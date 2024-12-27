@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Rondine - Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 3rem 0; /* Maggiore spazio per dare enfasi al nome */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 4rem; /* Font ancora più grande */
+            color: #fff; /* Colore bianco per il testo */
+            text-transform: uppercase; /* Tutto maiuscolo per dare maggiore impatto */
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Ombra più accentuata per far risaltare il testo */
+        }
+        main {
+            padding: 1rem;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 1rem auto;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+        }
+        .menu-section {
+            margin: 1.5rem 0;
+        }
+        .menu-section h2 {
+            color: #ffd700;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        .menu-item {
+            margin: 0.8rem 0;
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu-item span.name {
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #ffd700;
+        }
+        .menu-item span.ingredients {
+            font-size: 1rem;
+            color: #fff;
+        }
+        .menu-item span.price {
+            font-size: 1rem;
+            color: #ffd700;
+        }
+        @media screen and (max-width: 768px) {
+            body {
+                background-size: cover;
+            }
+            header {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            h1 {
+                font-size: 2.5rem; /* In caso di schermi più piccoli */
+            }
+            .menu-item {
+                font-size: 1rem;
+            }
+            main {
+                padding: 1rem;
+                margin: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La Rondine</h1>
+    </header>
+    <main>
+        <section class="menu-section">
+            <h2>Pizze Rosse</h2>
+            <div class="menu-item">
+                <span class="name">Maceratese</span>
+                <span class="ingredients">Pomodoro, Mozzarella, Salsiccia e Cipolla</span>
+                <span class="price">€8.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Margherita</span>
+                <span class="ingredients">Pomodoro e Mozzarella</span>
+                <span class="price">€7.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Marinara</span>
+                <span class="ingredients">Pomodoro, Olio, Aglio, Prezzemolo</span>
+                <span class="price">€7.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Napoletana</span>
+                <span class="ingredients">Pomodoro, Mozzarella, Alici</span>
+                <span class="price">€8.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Parigi</span>
+                <span class="ingredients">Pomodoro, Olio, Aglio, Prezzemolo, Pancetta, Olive</span>
+                <span class="price">€8.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Peperoni</span>
+                <span class="ingredients">Pomodoro, Mozzarella, Peperoni</span>
+                <span class="price">€8.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Prosciutto Cotto</span>
+                <span class="ingredients">Pomodoro, Mozzarella, Prosciutto Cotto</span>
+                <span class="price">€8.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Prosciutto Crudo</span>
+                <span class="ingredients">Pomodoro, Mozzarella, Prosciutto Crudo</span>
+                <span class="price">€10.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Romana</span>
+                <span class="ingredients">Pomodoro, Mozzarella, Alici, Capperi, Origano</span>
+                <span class="price">€8.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Salame Piccante</span>
+                <span class="ingredients">Pomodoro, Mozzarella, Salame Piccante</span>
+                <span class="price">€9.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Salsiccia</span>
+                <span class="ingredients">Pomodoro, Mozzarella, Salsiccia</span>
+                <span class="price">€8.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Siciliana</span>
+                <span class="ingredients">Pomodoro, Alici, Olive, Capperi, Origano</span>
+                <span class="price">€8.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Tonno</span>
+                <span class="ingredients">Pomodoro, Mozzarella, Tonno</span>
+                <span class="price">€8.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Trevisana</span>
+                <span class="ingredients">Pomodoro, Mozzarella, Melanzane, Peperoni, Radicchio</span>
+                <span class="price">€9.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Wurstel</span>
+                <span class="ingredients">Pomodoro, Mozzarella, Wurstel</span>
+                <span class="price">€8.00</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
